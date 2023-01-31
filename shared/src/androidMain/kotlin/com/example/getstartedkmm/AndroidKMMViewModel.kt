@@ -1,20 +1,20 @@
-package com.example.getstartedkmm.android
+package com.example.getstartedkmm
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import kotlinx.coroutines.cancel
 
 // Located inshared/androidMain
-abstract class KMMViewModel : ViewModel() {
+actual abstract class AndroidKMMViewModel : ViewModel() {
 
-    val coroutineScope = viewModelScope
+    actual val coroutineScope = viewModelScope
 
-    fun dispose() {
+    actual fun dispose() {
         coroutineScope.cancel()
         onCleared()
     }
 
-    override fun onCleared() {
+    actual override fun onCleared() {
         super.onCleared()
     }
 }

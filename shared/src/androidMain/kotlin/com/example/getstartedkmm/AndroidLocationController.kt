@@ -1,16 +1,17 @@
-package com.example.getstartedkmm.android
+package com.example.getstartedkmm
 
 import android.annotation.SuppressLint
 import android.location.Geocoder
+import com.example.getstartedkmm.android.appContext
 import com.google.android.gms.location.LocationServices
 import java.util.*
 import kotlin.coroutines.resume
 import kotlin.coroutines.suspendCoroutine
 
 // Located in shared/androidMain
-class LocationController {
+actual class LocationController {
     @SuppressLint("MissingPermission")
-    suspend fun getCurrentAddress(): String? = suspendCoroutine { continuation ->
+    actual suspend fun getCurrentAddress(): String? = suspendCoroutine { continuation ->
         LocationServices.getFusedLocationProviderClient(appContext).lastLocation
             .addOnFailureListener { continuation.resume(null) }
             .addOnSuccessListener { location ->
