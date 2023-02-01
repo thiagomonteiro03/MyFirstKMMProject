@@ -1,4 +1,4 @@
-package com.example.getstartedkmm.android
+package com.example.getstartedkmm
 
 import android.app.Application
 

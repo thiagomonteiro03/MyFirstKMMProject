@@ -6,7 +6,7 @@ import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.launch
 
 // Located in shared/commonMain
-class LocationViewModel: AndroidKMMViewModel() {
+class LocationViewModel: KMMViewModel() {
 
     private val _address = MutableStateFlow<String?>(null)
     val address = _address.asStateFlow()

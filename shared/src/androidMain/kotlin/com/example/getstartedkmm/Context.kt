@@ -1,4 +1,4 @@
-package com.example.getstartedkmm.android
+package com.example.getstartedkmm
 
 // Located in shared/androidMain
 import android.content.Context

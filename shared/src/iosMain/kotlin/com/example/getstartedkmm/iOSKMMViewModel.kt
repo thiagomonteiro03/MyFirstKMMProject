@@ -6,7 +6,7 @@ import kotlinx.coroutines.SupervisorJob
 import kotlinx.coroutines.cancel
 
 //Located in shared/iOSMain
-actual abstract class AndroidKMMViewModel {
+actual abstract class KMMViewModel {
     actual val coroutineScope = CoroutineScope(SupervisorJob() + Dispatchers.Main)
 
     actual fun dispose() {

@@ -5,7 +5,7 @@ import androidx.lifecycle.viewModelScope
 import kotlinx.coroutines.cancel
 
 // Located inshared/androidMain
-actual abstract class AndroidKMMViewModel : ViewModel() {
+actual abstract class KMMViewModel : ViewModel() {
 
     actual val coroutineScope = viewModelScope
 

@@ -2,7 +2,6 @@ package com.example.getstartedkmm
 
 import android.annotation.SuppressLint
 import android.location.Geocoder
-import com.example.getstartedkmm.android.appContext
 import com.google.android.gms.location.LocationServices
 import java.util.*
 import kotlin.coroutines.resume
